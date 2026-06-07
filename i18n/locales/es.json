@@ -6,7 +6,9 @@
   },
   "Navbar": {
     "home": "Inicio",
-    "pricing": "Precios",
+    "services": "Servicios",
+    "about": "Quiénes somos",
+    "contact": "Contacto",
     "menu": "Menú"
   },
   "Footer": {
@@ -35,20 +37,17 @@
     "contact": "Contáctenos"
   },
   "Feature": {
-    "title": "Características principales",
-    "description": "Landing Page o Página de Inicio moderna, rápida y adaptada para SEO. Desarrollada con Next.js, Tailwind CSS y TypeScript",
-    "openSource": "Código abierto",
-    "openSourceDesc": "Gratis y de código abierto, perfecto para tu próximo proyecto",
-    "ResponsiveDesign": "Diseño Responsivo",
-    "ResponsiveDesignDesc": "Se ve muy bien en cualquier dispositivo, desde el móvil hasta el escritorio",
-    "EasyCustomization": "Fácil personalización",
-    "EasyCustomizationDesc": "Fácil de personalizar con componentes modulares",
-    "MobileFriendly": "Compatible con dispositivos móviles",
-    "MobileFriendlyDesc": "Optimizado para dispositivos móviles con interacciones fluidas",
-    "SEOOptimized": "Optimizado para SEO",
-    "SEOOptimizedDesc": "Construido con las mejores prácticas de SEO para una mejor visibilidad",
-    "GlobalizationSupport": "Compatibilidad con i18n",
-    "GlobalizationSupportDesc": "Internacionalización incorporada para un alcance global"
+    "title": "Soluciones que transforman el uso de tus datos.",
+    "description": "Nuestros servicios están orientados a que obtengas buenos resultados. Por eso, nos adaptamos a tus necesidades y el estado en que se encuentre tu información.",
+    "action": "Ver servicios",
+    "service1Title": "Data Analytics y Reporting",
+    "service1Desc": "Creamos modelos de datos simples y complejos, escalables y automatizados, que permiten mostrar información útil para el seguimiento de los principales indicadores de negocio. Los modelos se crean a partir de bases de datos en SQL, utilizando archivos de tabla como Excel o Sheet o APIs web.",
+    "service2Title": "Optimización y reingeniería",
+    "service2Desc": "Si tu empresa ya cuenta con un desarrollo de BI, y el funcionamiento no es óptimo o no pueden obtener la información que necesitan, basándonos en nuestra experiencia y conocimiento podemos identificar oportunidades de mejoras como problemas técnicos o de rendimiento, y aplicar soluciones para optimizar modelos.",
+    "service3Title": "Mantenimiento y soporte personalizado",
+    "service3Desc": "Servicio exclusivo de mantenimiento y asistencia técnica que incluye ayuda y capacitación a colaboradores que utilicen la plataforma, en pos de crear uniones a largo plazo con nuestros clientes.",
+    "service4Title": "Outsourcing Business Intelligence (OBI)",
+    "service4Desc": "¿No cuentas con un equipo especializado? No hay problema. OBI es un servicio diseñado para delegar tus necesidades de procesamiento de la información a nuestro equipo de profesionales especializados."
   },
   "Testimonial": {
     "title": "Casos de éxito",
@@ -143,8 +142,8 @@
     "errorMessage": "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo."
   },
   "Hero": {
-    "title": "Haz que tu WEB sea más rápida",
-    "description": "Te proponemos desarrollar una Landing Page o Página de Bienvenida utilizando tecnologías de punta como Next.js, Tailwind CSS, Shadcn y TypeScript",
-    "action": "Comenzar"
+    "title": "Conoce el verdadero potencial de tus datos.",
+    "description": "Transformamos tus datos en resultados de negocio. Ofrecemos soluciones de Business Intelligence con Power BI y análisis avanzado, para que tu empresa tome mejores decisiones, optimice recursos y crezca con información clara y precisa.",
+    "action": "Contactanos"
   }
 }

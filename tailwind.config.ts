@@ -9,7 +9,7 @@ export default {
   theme: {
   	extend: {
   		fontFamily: {
-  			sans: ["var(--font-geist-sans)", ...fontFamily.sans]
+  			sans: ["var(--font-manrope)", ...fontFamily.sans]
   		},
   		colors: {
   			border: 'hsl(var(--border))',

@@ -18,7 +18,9 @@ import Image from 'next/image';
 
 const navItems = [
   { key: 'home', href: '/' },
-  { key: 'pricing', href: '/pricing' },
+  { key: 'services', href: '/servicios' },
+  { key: 'about', href: '/quienes-somos' },
+  { key: 'contact', href: '/#contact' },
 ];
 
 export default function Navbar() {
@@ -47,13 +49,12 @@ export default function Navbar() {
         <div className="flex flex-1 items-center">
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/logo.png"
-              alt="AndresGilli"
-              width={32}
-              height={32}
-              className="h-6 w-auto rounded-full"
+              src="/logo-be-data.png"
+              alt="BeData"
+              width={120}
+              height={36}
+              className="h-8 w-auto"
             />
-            <span className="font-bold text-xl text-black">AndresGilli</span>
           </Link>
 
           {/* Desktop Navigation Links */}

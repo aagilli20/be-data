@@ -2,9 +2,7 @@
 
 import Hero from "@/components/home/Hero";
 import Feature from "@/components/home/Feature";
-import Testimonial from "@/components/home/Testimonial";
-import Faq from "@/components/home/Faq";
-import Cta from "@/components/home/Cta";
+import Stats from "@/components/home/Stats";
 import { type Metadata } from 'next'
 import { getLocale } from "next-intl/server";
 import { getLocaleUrl } from "@/lib/utils";
@@ -34,13 +32,13 @@ export async function generateMetadata(): Promise<Metadata> {
       title: t("title"),
       description: t("description"),
       url: getLocaleUrl(locale),
-      siteName: 'AndresGilli',
+      siteName: 'BeData',
       images: [
         {
-          url: '/og-image.png',
-          width: 1200,
-          height: 630,
-          alt: 'AndresGilli Preview',
+          url: '/webbedata.webp',
+          width: 540,
+          height: 456,
+          alt: 'BeData Preview',
         },
       ],
       locale: locale,
@@ -50,8 +48,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: 'summary_large_image',
       title: t("title"),
       description: t("description"),
-      images: ['/og-image.png'],
-      creator: '@AndresGilliTech',
+      images: ['/webbedata.webp'],
     },
     robots: {
       index: true,
@@ -70,11 +67,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function HomePage() {
   return <>
     <Hero />
-    <div className="max-w-7xl mx-auto">
-      <Feature />
-      <Testimonial />
-      <Faq />
-    </div>
-    <Cta />
+    <Feature />
+    <Stats />
   </>;
 }

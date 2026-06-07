@@ -1,7 +1,12 @@
 import React from "react";
 import { cn } from "@/lib/utils";
-import { GeistSans } from "geist/font/sans";
+import { Manrope } from "next/font/google";
 import { NextIntlClientProvider, useLocale, useMessages } from 'next-intl';
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+});
 import Navbar from "@/components/common/Navbar";
 import Footer from '@/components/common/Footer';
 import { GoogleAnalytics } from '@next/third-parties/google'
@@ -42,7 +47,7 @@ export default function LocaleLayout({
     const locale = useLocale();
     const messages = useMessages();
     return (
-        <html lang={locale} className={cn(GeistSans.variable, "scroll-smooth scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100")}>
+        <html lang={locale} className={cn(manrope.variable, "scroll-smooth scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100")}>
             <body suppressHydrationWarning>
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <Navbar />

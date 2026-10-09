@@ -21,9 +21,9 @@ services:
       retries: 3
       start_period: 40s
     networks:
-      - horizon-network
+      - bedata-network
 
 networks:
-  horizon-network:
-    name: horizon-network
+  bedata-network:
+    name: bedata-network
     driver: bridge

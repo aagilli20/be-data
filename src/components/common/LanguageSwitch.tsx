@@ -1,8 +1,6 @@
 'use client';
 
 import { useLocale } from 'next-intl';
-import { usePathname, useRouter } from 'next/navigation';
-import { useState } from 'react';
 import { Globe } from 'lucide-react';
 import {
   DropdownMenu,
@@ -10,30 +8,20 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { localeItems } from "@/../i18n/request";
+import { localeItems } from "@/../i18n/config";
+import { usePathname, useRouter } from "@/../i18n/navigation";
 import { Button } from "@/components/ui/button";
-
 
 export default function LanguageSwitch() {
   const locale = useLocale();
   const router = useRouter();
-  const pathname = usePathname().replace(`/${locale}`, '');
-  const [isChanging, setIsChanging] = useState(false);
-
-  const switchLanguage = async (newLocale: string) => {
-    setIsChanging(true);
-    try {
-      return router.push(`/${newLocale}${pathname}`);
-    } finally {
-      setIsChanging(false);
-    }
-  };
+  const pathname = usePathname();
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button 
-          variant="ghost" 
+        <Button
+          variant="ghost"
           className="flex items-center gap-2 hover:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
           aria-label="Select language"
           aria-haspopup="menu"
@@ -44,17 +32,14 @@ export default function LanguageSwitch() {
           </span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent 
-        align="end"
-        aria-label="Language selection menu"
-      >
+      <DropdownMenuContent align="end" aria-label="Language selection menu">
         {localeItems.map((lang) => (
-          <DropdownMenuItem 
+          <DropdownMenuItem
             key={lang.code}
             role="menuitem"
             aria-label={`Switch to ${lang.name}`}
-            disabled={isChanging || locale === lang.code}
-            onClick={() => switchLanguage(lang.code)}
+            disabled={locale === lang.code}
+            onClick={() => router.replace(pathname, { locale: lang.code })}
             className={locale === lang.code ? 'bg-accent' : ''}
           >
             {lang.name}
@@ -63,4 +48,4 @@ export default function LanguageSwitch() {
       </DropdownMenuContent>
     </DropdownMenu>
   );
-} 
+}

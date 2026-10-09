@@ -11,8 +11,6 @@ export const env = createEnv({
       .enum(["development", "test", "production"])
       .default("development"),
     VERSION: z.string(),
-    GITHUB_REPO_URL: z.string().default("https://github.com/aagilli20/landing-page"),
-    CONTACT_URL: z.string().default("/contact"),
     DOMAIN: z.string().default("http://localhost:3000"),
     GA_ID: z.string().optional(),
   },
@@ -24,7 +22,7 @@ export const env = createEnv({
    */
   client: {
     // NEXT_PUBLIC_CLIENTVAR: z.string(),
-    NEXT_PUBLIC_GITHUB_REPO_URL: z.string().default("https://github.com/aagilli20/landing-page"),
+    NEXT_PUBLIC_CONTACT_EMAIL: z.string().optional(),
   },
 
   /**
@@ -34,11 +32,9 @@ export const env = createEnv({
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
     VERSION: process.env.VERSION,
-    GITHUB_REPO_URL: process.env.GITHUB_REPO_URL,
-    NEXT_PUBLIC_GITHUB_REPO_URL: process.env.NEXT_PUBLIC_GITHUB_REPO_URL,
+    NEXT_PUBLIC_CONTACT_EMAIL: process.env.NEXT_PUBLIC_CONTACT_EMAIL,
     DOMAIN: process.env.DOMAIN,
     GA_ID: process.env.GA_ID,
-    CONTACT_URL: undefined
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially

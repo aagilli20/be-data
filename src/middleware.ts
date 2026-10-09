@@ -1,7 +1,7 @@
 // @auto-i18n-check. Please do not delete the line.
 
 import createMiddleware from 'next-intl/middleware';
-import {locales, defaultLocale} from "../i18n/request";
+import {locales, defaultLocale} from "../i18n/config";
 import type { NextRequest } from 'next/server';
 
 const I18nMiddleware = createMiddleware({

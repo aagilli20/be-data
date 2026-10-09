@@ -1,149 +1,302 @@
 {
   "website": {
-    "name": "AndresGilli",
-    "title": "AndresGilli - Sitios Web y Landing Pages de carga rápida con las últimas tecnologías",
-    "description": "Transforme su negocio con tecnologías de vanguardia."
+    "name": "Be Data",
+    "title": "Soluciones de BI y Reporting | Be Data",
+    "description": "Outsourcing de Data & BI con Power BI. Dashboards, modelos de datos, optimización y soporte mensual para empresas que quieren decidir con información clara."
   },
   "Navbar": {
     "home": "Inicio",
     "services": "Servicios",
     "about": "Quiénes somos",
     "contact": "Contacto",
-    "menu": "Menú"
+    "menu": "Menú",
+    "cta": "Contactanos"
   },
-  "Footer": {
-    "description": "Página de inicio moderna y de código abierto creada con Next.js y Tailwind CSS. Tu web será más rápida y fácil de encontrar para los buscadores. ¡Crea tu sitio web ahora!",
-    "product": "Producto",
-    "components": "Código Fuente",
-    "componentsContent": "Desde el inicio del proyecto brindamos acceso a un repisitorio git privado para que puedan ver el código fuente de su sitio web.",
-    "templates": "Sitio Web en línea",
-    "templatesContent": "Entregamos el sitio web operativo en Vercel o en cualquier hosting propuesto por el cliente que soporte Next.js.",
-    "documentation": "Opción de Mantenimiento",
-    "documentationContent": "Ofrecemos una opción de abono mensual para el mantenimiento de tu sitio web. Incluye actualizaciones de seguridad, mejoras de rendimiento y soporte técnico.",
-    "privacyContent1": "Tu privacidad es importante para nosotros. Recopilamos información únicamente para proporcionarte nuestros servicios de desarrollo y mantenimiento web.",
-    "privacyContent2": "No compartimos tus datos personales, información de contacto o detalles de tu proyecto con terceros sin tu consentimiento explícito, salvo cuando la ley lo exija.",
-    "termsContent1": "Al contratar y utilizar nuestros servicios de diseño y desarrollo web, aceptas cumplir con estas condiciones. Los presupuestos y tiempos de entrega se definirán previo al inicio.",
-    "termsContent2": "Nos reservamos el derecho de actualizar estos términos en el futuro. Ante cualquier situación, no dudes en comunicarte con nosotros desde la sección de contacto.",
-    "social": "Social",
-    "github": "GitHub",
-    "community": "Comunidad",
-    "social1": "Instagram",
-    "social2": "Facebook",
-    "social3": "TikTok",
-    "copyright": "Todos los derechos reservados.",
-    "service": "Recursos",
-    "privacy": "Política de privacidad",
-    "terms": "Términos de servicio",
-    "contact": "Contáctenos"
+  "Hero": {
+    "title": "De proyectos de BI a una Capacidad de BI continua.",
+    "description": "En <b>Bedata</b> trabajamos junto a tu empresa para que BI no termine cuando se entrega un dashboard. Nos integramos a tu equipo o trabajamos como equipo externo, acompañando tus necesidades de análisis, desarrollo y evolución.",
+    "action": "Contactanos",
+    "kicker": "Outsourcing de Data & BI",
+    "kickerDesc": "Ayudamos a las empresas liderando, guiando o desarrollando Data & BI, desde cero o con tu equipo, bajo contrato mensual o a plazo fijo."
   },
   "Feature": {
     "title": "Soluciones que transforman el uso de tus datos.",
     "description": "Nuestros servicios están orientados a que obtengas buenos resultados. Por eso, nos adaptamos a tus necesidades y el estado en que se encuentre tu información.",
     "action": "Ver servicios",
-    "service1Title": "Data Analytics y Reporting",
-    "service1Desc": "Creamos modelos de datos simples y complejos, escalables y automatizados, que permiten mostrar información útil para el seguimiento de los principales indicadores de negocio. Los modelos se crean a partir de bases de datos en SQL, utilizando archivos de tabla como Excel o Sheet o APIs web.",
-    "service2Title": "Optimización y reingeniería",
-    "service2Desc": "Si tu empresa ya cuenta con un desarrollo de BI, y el funcionamiento no es óptimo o no pueden obtener la información que necesitan, basándonos en nuestra experiencia y conocimiento podemos identificar oportunidades de mejoras como problemas técnicos o de rendimiento, y aplicar soluciones para optimizar modelos.",
-    "service3Title": "Mantenimiento y soporte personalizado",
-    "service3Desc": "Servicio exclusivo de mantenimiento y asistencia técnica que incluye ayuda y capacitación a colaboradores que utilicen la plataforma, en pos de crear uniones a largo plazo con nuestros clientes.",
-    "service4Title": "Outsourcing Business Intelligence (OBI)",
-    "service4Desc": "¿No cuentas con un equipo especializado? No hay problema. OBI es un servicio diseñado para delegar tus necesidades de procesamiento de la información a nuestro equipo de profesionales especializados."
+    "items": [
+      {
+        "title": "Data Analytics y Reporting",
+        "desc": "Creamos <b>modelos de datos simples y complejos, escalables y automatizados</b>, que permiten mostrar información útil para el seguimiento de los principales indicadores de negocio. Los modelos se crean a partir de bases de datos en SQL, utilizando archivos de tabla como Excel o Sheet o APIs web."
+      },
+      {
+        "title": "Optimización y reingeniería",
+        "desc": "Si tu empresa ya cuenta con un desarrollo de BI, y el funcionamiento no es óptimo o no pueden obtener la información que necesitan, basándonos en nuestra experiencia y conocimiento podemos identificar <b>oportunidades de mejoras</b> como problemas técnicos o de rendimiento, y aplicar soluciones para optimizar modelos."
+      },
+      {
+        "title": "Mantenimiento y soporte personalizado",
+        "desc": "Servicio exclusivo de mantenimiento y asistencia técnica que incluye <b>ayuda y capacitación</b> a colaboradores que utilicen la plataforma, en pos de crear uniones a largo plazo con nuestros clientes."
+      },
+      {
+        "title": "Outsourcing Business Intelligence (OBI)",
+        "desc": "¿No cuentas con un equipo especializado? No hay problema. OBI es un servicio diseñado para <b>delegar tus necesidades de procesamiento de la información</b> a nuestro equipo de profesionales especializados."
+      }
+    ]
+  },
+  "Stats": {
+    "years": "años de experiencia",
+    "projects": "Proyectos implementados",
+    "industries": "Industrias desarrolladas"
+  },
+  "Plans": {
+    "title": "Planes de suscripción",
+    "currency": "(USD) Mensual",
+    "cta": "Quiero este plan",
+    "footnote": "* Precio con contrato de 12 meses. Con contrato de 6 meses ${p6}. Sin permanencia (mes a mes): ${p}/mes",
+    "items": [
+      {
+        "name": "Starter",
+        "for": "Para equipos que están comenzando con Power BI o necesitan soporte limitado",
+        "price": 500,
+        "price12": 390,
+        "price6": 445,
+        "badge": "POPULARES",
+        "features": [
+          "10 horas mensuales",
+          "Mantenimiento de tableros",
+          "Nuevos desarrollos (limitado)",
+          "Soporte por mail (respuesta en 24 hs)",
+          "Capacitación en Power BI a demanda",
+          "Reuniones de soporte a demanda"
+        ]
+      },
+      {
+        "name": "Growth",
+        "for": "Para empresas que ya usan Power BI activamente y necesitan evolución continua.",
+        "price": 949,
+        "price12": 739,
+        "price6": 850,
+        "badge": "OPORTUNIDAD",
+        "features": [
+          "20 horas de trabajo mensual",
+          "Soporte por mail y WhatsApp",
+          "Nuevos dashboards o mejoras",
+          "Optimización de modelos y performance",
+          "Documentación técnica de modelos",
+          "Reuniones quincenales de seguimiento"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "for": "Para organizaciones con necesidades BI avanzadas o múltiples equipos de usuarios.",
+        "price": 1799,
+        "price12": 1399,
+        "price6": 1600,
+        "badge": "PRIME",
+        "features": [
+          "40 hs mensuales de desarrollo",
+          "Desarrollo y evolución de modelos complejos",
+          "Integraciones de datos avanzadas",
+          "Migraciones de herramientas de BI",
+          "Asesoramiento técnico y estratégico",
+          "Reuniones semanales de seguimiento"
+        ]
+      }
+    ]
+  },
+  "Courses": {
+    "title": "Aprende a autogestionar la plataforma Power BI",
+    "description": "Inscribete para participar de una capacitación exclusiva para nuestros clientes y así aprovechar al máximo las herramientas que Power BI y Be Data Global te ofrecen.",
+    "classes": "8 clases de 2 hs. durante 1 mes",
+    "enroll": "Inscripciones",
+    "download": "Descargar programa",
+    "features": [
+      "Virtual",
+      "Práctico",
+      "Personalizado",
+      "Material Extra"
+    ]
+  },
+  "Industries": {
+    "title": "Estas industrias ya están aprovechando al máximo sus datos",
+    "items": [
+      "TEXTIL",
+      "ENERGÍA",
+      "MEDICINA",
+      "CRIANZA DE PECES",
+      "SOFTWARE"
+    ]
   },
   "Testimonial": {
-    "title": "Casos de éxito",
-    "description": "Algunos de nuestros clientes",
-    "quoteOne": "Landing page para un negocio de network marketing.",
-    "authorOne": "go.soyevesai.com.ar",
-    "titleOne": "Emprendedora",
-    "quoteTwo": "Landing page para empresa de Data Analitics.",
-    "authorTwo": "data.analitics.com.ar",
-    "titleTwo": "Emprendimiento de análisis de datos y capacitación",
-    "quoteThree": "La mejor plantilla de página de destino que he usado. La optimización SEO realmente ayudó a la clasificación de nuestro sitio.",
-    "authorThree": "James Wilson",
-    "titleThree": "Fundador de la startup",
-    "quoteFour": "El diseño responsivo funciona perfectamente en todos los dispositivos. Muy impresionado con la atención al detalle.",
-    "authorFour": "Sophie Martin",
-    "titleFour": "Diseñador de interfaz de usuario",
-    "quoteFive": "La personalización es muy fácil. Lo adaptamos a nuestra marca en poco tiempo.",
-    "authorFive": "David Kim",
-    "titleFive": "Marketing Director",
-    "quoteSix": "El enfoque móvil y las optimizaciones de rendimiento son exactamente lo que necesitábamos.",
-    "authorSix": "Emma Thompson",
-    "titleSix": "Desarrollador Web"
+    "items": [
+      {
+        "quote": "Tuvimos el placer de trabajar con el equipo de Bedata específicamente con Gabriel Gilli quien elaboró y nos asesoró en la realización de un dashboard utilizando Power BI, la experiencia superó nuestras expectativas. Desde el inicio, demostraron un profundo conocimiento de la herramienta y una excelente capacidad para adaptarse a los distintos requerimientos solicitados y requeridos por nuestras Plantas de Proceso productos salmonideos.",
+        "author": "Rodrigo Javier Ojeda Cordova",
+        "role": "Encargado de Gestión y Costo Planta Chamiza",
+        "company": "Salmones Austral"
+      },
+      {
+        "quote": "Tuvimos la oportunidad de trabajar con la empresa Bedata, con el equipo de Gabriel Gilli, consultores en Power BI que superó nuestras expectativas en todos los aspectos. Desde el inicio, demostró una planificación meticulosa, asegurando que cada paso del proceso estuviera cuidadosamente estructurado. Su enfoque fue concreto, abordando nuestros requerimientos de manera clara y efectiva. Lo que más destacó fue su impresionante habilidad técnica. El consultor no solo dominaba todas las herramientas y funciones de Power BI, sino que también supo adaptarlas a nuestras necesidades específicas, ofreciéndonos soluciones personalizadas y de gran valor.",
+        "author": "Ing. Pablo Biscione",
+        "role": "Gerente Operaciones",
+        "company": "Mercap"
+      },
+      {
+        "quote": "Luego de pasar por varias empresas y herramientas, hemos logrado dar con Bedata, Gabriel Gilli, los únicos que lograron entender y plasmar a la realidad nuestra necesidad. Logramos un Dashboard con toda la info que precisamos de forma rápida y profesional.",
+        "author": "Alejandro Khachadourian",
+        "role": "Socio – Gerente Comercial Superior",
+        "company": "Grupo Kalel – Filament Argentina"
+      }
+    ]
   },
-  "Faq": {
-    "title": "Preguntas frecuentes",
-    "description": "Todo lo que necesitas saber sobre nuestra propuesta de desarrollo",
-    "questionOne": "¿Qué tecnologías van a utilizar?",
-    "answerOne": "Utilizaremos Next.js, TypeScript, Tailwind CSS y otras herramientas modernas. Utiliza las mejores prácticas para el rendimiento y el SEO.",
-    "questionTwo": "¿Realizan la personalización?",
-    "answerTwo": "¡Sí! El sitio web se entrega personalizado.",
-    "questionThree": "¿Cómo funciona la internacionalización?",
-    "answerThree": "Utilizamos next-intl para la internacionalización, lo que facilita la adición de nuevos idiomas. Sólo tienes que añadir tus traducciones a la carpeta de mensajes.",
-    "questionFour": "¿Entregan el código?",
-    "answerFour": "¡Absolutamente! AndresGilli es de código abierto y se entrega con la personalización correspondiente.",
-    "questionFive": "¿Lo entregan productivo?",
-    "answerFive": "Podemos entregar solo el código fuente o el sitio web ya funcional. También podemos ayudarte con la configuración de tu dominio con la compra del dominio si es que aún no lo tienes."
-  },
-  "Cta": {
-    "title": "¡Quiero mi sitio web!",
-    "description": "Completa el formulario con tus datos y te contactaremos para más información. Su consulta no tiene costo y no genera ningúna compromiso.",
-    "primaryAction": "Enviar consulta",
-    "secondaryAction": "Ver en GitHub"
-  },
-  "Pricing": {
-    "title": "Precios",
-    "description": "Personaliza el precio para tu proyecto",
-    "monthly": "Mínimo",
-    "yearly": "Intermedio",
-    "oneTime": "Completo",
-    "month": "mes",
-    "popular": "Popular",
-    "upgrade": "Comenzar",
-    "basicTitle": "Básico",
-    "proTitle": "Pro",
-    "basicBilling": "Para proyectos personales o profesionales",
-    "proBilling": "Perfecto para proyectos personales o profesionales",
-    "basicFeatureTitle": "Código fuente personalizado",
-    "proFeatureTitle": "Sitio web funcional",
-    "basic": {
-      "credits": "Todos los componentes principales personalizados",
-      "generation": "Sección de inicio y precios",
-      "cover": "Sección de testimonios",
-      "scripts": "Botón de whatsapp",
-      "download": "Solo en español"
-    },
-    "pro": {
-      "credits": "Todos los componentes principales personalizados",
-      "basic": "Sección de inicio, precios y testimonios",
-      "llm": "Botón de whatsapp",
-      "tts": "Solo en español",
-      "styles": "Personalización avanzada"
-    },
-    "periodYear": "año",
-    "periodOnce": "una vez",
-    "basicBillingYearly": "Pensado para pequeñas o medianas empresas",
-    "proBillingYearly": "Perfecto para pequeñas o medianas empresas",
-    "basicBillingOneTime": "Un plan pensado para quienes requieren mayor soporte",
-    "proBillingOneTime": "Perfecto para quienes requieren mayor soporte y mantenimiento"
+  "AboutHome": {
+    "title": "Somos Be Data Oficial",
+    "description": "Un equipo de profesionales apasionados por el análisis de datos que viene a acercar el mundo del Data Analytics a cada empresa que nos elija, garantizando su uso sencillo y mejoras en los procesos.",
+    "description2": "Contamos con basta expriencia en soluciones de reporting a medida según la industria que se desarrolle.",
+    "action": "Conocé nuestro método de trabajo"
   },
   "Contact": {
-    "title": "Contáctanos",
-    "description": "Estamos aquí para ayudarte. Envíanos un mensaje y te responderemos lo antes posible.",
-    "metaTitle": "Contacto - AndresGilli",
-    "metaDescription": "Ponte en contacto con nosotros para cualquier consulta.",
+    "title": "Queremos ayudarte a mejorar.",
+    "description": "Déjanos tu mensaje para <b>agendar una reunión</b> o tu consulta ante cualquier duda que tengas.",
+    "call": "Agenda una llamada de 30 minutos",
     "name": "Nombre",
-    "phone": "Teléfono",
     "email": "Correo electrónico",
+    "company": "Empresa",
+    "phone": "Celular",
     "message": "Mensaje",
-    "submit": "Enviar mensaje",
+    "submit": "Enviar",
     "sending": "Enviando...",
     "successMessage": "¡Mensaje enviado con éxito!",
     "errorMessage": "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo."
   },
-  "Hero": {
-    "title": "Conoce el verdadero potencial de tus datos.",
-    "description": "Transformamos tus datos en resultados de negocio. Ofrecemos soluciones de Business Intelligence con Power BI y análisis avanzado, para que tu empresa tome mejores decisiones, optimice recursos y crezca con información clara y precisa.",
-    "action": "Contactanos"
+  "ServicesPage": {
+    "metaTitle": "Servicios - Be Data",
+    "metaDescription": "Data Analytics y Reporting, optimización y reingeniería, outsourcing de BI y soporte personalizado con Power BI.",
+    "title": "Soluciones a la medida de tu empresa",
+    "intro1": "Nuestro enfoque es integral, centrado en el usuario que utiliza nuestra plataforma y la empresa que representa.",
+    "intro2": "Por eso, cada uno de nuestros servicios está orientado a dar soluciones personalizadas y adaptables a cada empresa según su rubro, su propia identidad y el estado de sus datos.",
+    "powerTitle": "Acelera la Innovación",
+    "powerDesc": "Aprovecha el potencial de la suite de Microsoft Power Platform",
+    "blocks": [
+      {
+        "title": "Data Analytics y Reporting",
+        "intro": "Transformamos datos complejos en información clara y accionable, impulsando tus decisiones para que sean más estratégicas y aumentando tu rendimiento.",
+        "provides": "Para ello, Be Data provee:",
+        "highlight": "Análisis personalizado",
+        "highlightDesc": "Creamos modelos de datos simples y complejos, escalables y automatizados, que permiten mostrar información útil para el seguimiento de los principales indicadores de negocio. Los modelos se crean a partir de bases de datos en SQL, utilizando archivos de tabla como Excel o Sheet o APIs web.",
+        "bullets": [
+          "Dashboards Interactivos",
+          "Reportes Automáticos",
+          "Integración de herramientas",
+          "Consultoría y asesoramiento estratégico"
+        ]
+      },
+      {
+        "title": "Optimización y Reingeniería",
+        "intro": "Gracias a nuestra experiencia y un enfoque sistemático y analítico, ayudamos a las organizaciones a rediseñar sus procesos, eliminar ineficiencias y maximizar el uso de recursos.",
+        "provides": "Be Data garantiza:",
+        "highlight": "Diagnóstico Integral",
+        "highlightDesc": "A través de un análisis detallado de los procesos existentes logramos identificar cuellos de botella, redundancias y áreas de mejora en la integración de la información. Utilizamos técnicas como el mapeo de procesos y análisis de flujo de trabajo para obtener una visión clara del estado actual.",
+        "bullets": [
+          "Rediseño de procesos",
+          "Implementación de Mejores Prácticas",
+          "Capacitación y Soporte continuo"
+        ]
+      },
+      {
+        "title": "Outsourcing Business Intelligence (OBI)",
+        "intro": "Nuestro servicio de outsourcing te permite externalizar tareas clave de tu negocio, delegando procesos a un equipo de expertos para que puedas concentrarte en tus actividades principales. OBI se centra en áreas especializadas como análisis de datos, TI y más, garantizando:",
+        "provides": "",
+        "highlight": "Colaboración y comunicación fluída",
+        "highlightDesc": "Mediante nuestro equipo de Outsourcing tus solicitudes e inquietudes serán evacuadas con rapidez, funcionando como si fueran parte de tu empresa. Adaptamos nuestra comunicación a la tuya. Para una buena colaboración, nuestro equipo trabaja en simultáneo con el tuyo.",
+        "bullets": [
+          "Optimización de recursos y reducción de costos operativos."
+        ]
+      },
+      {
+        "title": "Mantenimiento y Soporte Personalizado",
+        "intro": "Asistencia técnica y asesoramiento como complemento de cada solución de Be Data. Pero no solo eso.",
+        "provides": "",
+        "highlight": "Capacitaciones gratuitas",
+        "highlightDesc": "Para los usuarios de las plataformas que desarrollamos, para que puedan obtener el máximo rendimiento con nuestros productos.",
+        "bullets": [
+          "Cursos desde cero"
+        ]
+      }
+    ],
+    "ctaTitle": "Empieza a mejorar los resultados de tu empresa utilizando el poder de tus datos.",
+    "ctaAction": "Dejanos tu mensaje"
+  },
+  "AboutPage": {
+    "metaTitle": "Quiénes somos - Be Data",
+    "metaDescription": "Un equipo profesional joven que cree en el potencial de los datos para transformar el mundo.",
+    "title": "Nosotros",
+    "p1": "Un equipo profesional joven que cree en el potencial de los datos para transformar el mundo. Creamos Be Data luego de muchos años de trabajo en otras empresas para aportar lo que se necesitaba en el mercado: un servicio a medida del cliente, que no se aparte de su lado y mejore constantemente.",
+    "p2": "Nuestro objetivo es ayudar a las empresas a explotar sus datos para obtener información de valor y apoyar su crecimiento.",
+    "team": [
+      {
+        "name": "Gabriel Gilli",
+        "role": "Microsoft Certified Power Bi Data Analyst Associate.",
+        "bio": "Especialista en desarrollo de modelos complejos con Power BI, conexión a múltiples orígenes y diseño profesionales. SQL Server y MySQL. Liderazgo de proyectos y equipo."
+      },
+      {
+        "name": "Ale Maldonado",
+        "role": "Data Analyst Senior.",
+        "bio": "Especialista en análisis de datos y desarrollo de proyectos con Microsoft Power BI y SQL. DAX y M. Modelos complejos. Performance y optimización. Nuestro consultor BI y especialista de Storytelling de Be Data."
+      },
+      {
+        "name": "Jimena Salvatore",
+        "role": "Especialista Administrativa Contable.",
+        "bio": "Experta en conciliación bancaria, control y seguimiento de cuentas corrientes, facturación mensual. Realiza registros en sistema contable y confección de informes mensuales en Excel o Power BI. (Sistema Tango, Bejerman, Bica Ágil, Regente)."
+      }
+    ],
+    "methodTitle": "Nuestra metodología de trabajo nos permite lograrlo.",
+    "steps": [
+      {
+        "title": "Cliente",
+        "desc": "Definición de orígenes de datos. Designación de Product Owner del negocio. Otorgamiento de credenciales. Asignación de prioridades y descripción de las necesidades de información."
+      },
+      {
+        "title": "Fábrica",
+        "desc": "Planificación del desarrollo. Conexión a orígenes, modelado, normalización y transformación de los datos. Desarrollo de tableros y publicación en PBI Service. Configuración de Gateway, actualización programada."
+      },
+      {
+        "title": "Presentación",
+        "desc": "Reuniones periódicas para el seguimiento del proyecto y presentación de avances. Recepción de feedbacks y re-works. Definición de objetivos semanales."
+      }
+    ],
+    "differentTitle": "TRANSFORMAMOS SIMPLES DATOS EN INFORMACIÓN DE VALOR",
+    "differentDesc": "Lo que nos hace distintos es lo que brindamos a nuestros clientes en cada uno de nuestros servicios:",
+    "values": [
+      {
+        "title": "Foco en el usuario",
+        "desc": "Nuestros clientes son, a su vez, quienes van a utilizar las plataformas que desarrollemos. Por eso programamos y diseñamos cada plataforma según su estilo y necesidades."
+      },
+      {
+        "title": "Funcionalidad como prioridad",
+        "desc": "Cada plataforma debe ser sencilla en su uso, rápida en su movimiento y analítica en sus resultados."
+      },
+      {
+        "title": "Comunicación fluida",
+        "desc": "Es la base que creemos indispensable para construir a futuro y cómo queremos que se transmitan los datos."
+      },
+      {
+        "title": "Buenas prácticas",
+        "desc": "Para mejorar el análisis y el buen uso de la información enseñamos a utilizar de forma correcta cada plataforma y cómo aprovechar al máximo los resultados."
+      },
+      {
+        "title": "Diseño corporativo único",
+        "desc": "La identidad es muy importante. Por eso, dotamos de un diseño único a la plataforma que utilizará tu empresa."
+      }
+    ],
+    "cta": "Contactanos"
+  },
+  "Footer": {
+    "tagline": "Soluciones de BI y Reporting para empresas que quieren decidir con datos.",
+    "links": "Navegación",
+    "contactTitle": "Contacto",
+    "copyright": "Todos los derechos reservados."
+  },
+  "Common": {
+    "whatsapp": "Chatear por WhatsApp"
   }
 }

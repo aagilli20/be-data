@@ -1,150 +1,302 @@
 {
   "website": {
-    "name": "AndresGilli",
-    "title": "AndresGilli - ",
-    "description": "Transform your business with cutting-edge technologies."
+    "name": "Be Data",
+    "title": "BI and Reporting Solutions | Be Data",
+    "description": "Data & BI outsourcing with Power BI. Dashboards, data models, optimization and monthly support for companies that want to decide with clear information."
   },
   "Navbar": {
     "home": "Home",
-    "pricing": "Pricing",
-    "menu": "Menu"
+    "services": "Services",
+    "about": "About us",
+    "contact": "Contact",
+    "menu": "Menu",
+    "cta": "Contact us"
   },
-  "Footer": {
-    "description": "AndresGilli is a modern, open-source landing page template built with Next.js and Tailwind CSS, helping developers create beautiful websites faster.",
-    "product": "Product",
-    "components": "Source Code",
-    "componentsContent": "From the beginning of the project, we provide access to a private git repository so you can see the source code of your website.",
-    "templates": "Live Website",
-    "templatesContent": "We deliver the operational website hosted on Vercel or any hosting proposed by the client that supports Next.js.",
-    "documentation": "Maintenance Option",
-    "documentationContent": "We offer a monthly subscription option for the maintenance of your website. This includes security updates, performance improvements, and technical support.",
-    "privacyContent1": "Your privacy is important to us. We only collect information to provide you with our web development and maintenance services.",
-    "privacyContent2": "We do not share your personal data, contact information, or project details with third parties without your explicit consent, except when required by law.",
-    "termsContent1": "By hiring and using our web design and development services, you agree to comply with these conditions. Budgets and delivery times will be defined prior to the start.",
-    "termsContent2": "We reserve the right to update these terms in the future. In any situation, do not hesitate to reach out to us through the contact section.",
-    "social": "Social",
-    "github": "GitHub",
-    "community": "Community",
-    "social1": "Instagram",
-    "social2": "Facebook",
-    "social3": "TikTok",
-    "copyright": "All rights reserved.",
-    "service": "Resources",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
-    "contact": "Contact Us"
+  "Hero": {
+    "title": "From BI projects to a continuous BI Capability.",
+    "description": "At <b>Bedata</b> we work alongside your company so that BI doesn't end when a dashboard is delivered. We join your team or work as an external team, supporting your analysis, development and evolution needs.",
+    "action": "Contact us",
+    "kicker": "Data & BI Outsourcing",
+    "kickerDesc": "We help companies by leading, guiding or developing Data & BI, from scratch or with your team, under a monthly or fixed-term contract."
   },
   "Feature": {
-    "title": "Key Features",
-    "description": "A modern landing page template built with Next.js, Tailwind CSS, Shadcn, and TypeScript",
-    "openSource": "Open Source",
-    "openSourceDesc": "Free and open source, perfect for your next project",
-    "ResponsiveDesign": "Responsive Design",
-    "ResponsiveDesignDesc": "Looks great on any device, from mobile to desktop",
-    "EasyCustomization": "Easy Customization",
-    "EasyCustomizationDesc": "Simple to customize with modular components",
-    "MobileFriendly": "Mobile Friendly",
-    "MobileFriendlyDesc": "Optimized for mobile devices with smooth interactions",
-    "SEOOptimized": "SEO Optimized",
-    "SEOOptimizedDesc": "Built with SEO best practices for better visibility",
-    "GlobalizationSupport": "i18n Support",
-    "GlobalizationSupportDesc": "Built-in internationalization for global reach"
+    "title": "Solutions that transform how you use your data.",
+    "description": "Our services are focused on getting you good results. That's why we adapt to your needs and to the state of your information.",
+    "action": "See services",
+    "items": [
+      {
+        "title": "Data Analytics and Reporting",
+        "desc": "We build <b>simple and complex, scalable and automated data models</b> that surface useful information to track your main business indicators. Models are built from SQL databases, spreadsheet files such as Excel or Sheets, or web APIs."
+      },
+      {
+        "title": "Optimization and reengineering",
+        "desc": "If your company already has a BI development that doesn't perform well or can't deliver the information you need, based on our experience we can identify <b>improvement opportunities</b> such as technical or performance issues, and apply solutions to optimize models."
+      },
+      {
+        "title": "Maintenance and personalized support",
+        "desc": "An exclusive maintenance and technical assistance service that includes <b>help and training</b> for the people who use the platform, to build long-term relationships with our clients."
+      },
+      {
+        "title": "Business Intelligence Outsourcing (OBI)",
+        "desc": "No specialized team? No problem. OBI is a service designed to <b>delegate your information processing needs</b> to our team of specialized professionals."
+      }
+    ]
+  },
+  "Stats": {
+    "years": "years of experience",
+    "projects": "Projects delivered",
+    "industries": "Industries served"
+  },
+  "Plans": {
+    "title": "Subscription plans",
+    "currency": "(USD) Monthly",
+    "cta": "I want this plan",
+    "footnote": "* Price with a 12-month contract. With a 6-month contract ${p6}. No commitment (month to month): ${p}/month",
+    "items": [
+      {
+        "name": "Starter",
+        "for": "For teams starting with Power BI or needing limited support",
+        "price": 500,
+        "price12": 390,
+        "price6": 445,
+        "badge": "POPULAR",
+        "features": [
+          "10 hours per month",
+          "Dashboard maintenance",
+          "New developments (limited)",
+          "Email support (24 h response)",
+          "On-demand Power BI training",
+          "On-demand support meetings"
+        ]
+      },
+      {
+        "name": "Growth",
+        "for": "For companies already using Power BI actively that need continuous evolution.",
+        "price": 949,
+        "price12": 739,
+        "price6": 850,
+        "badge": "OPPORTUNITY",
+        "features": [
+          "20 working hours per month",
+          "Email and WhatsApp support",
+          "New dashboards or improvements",
+          "Model and performance optimization",
+          "Technical model documentation",
+          "Bi-weekly follow-up meetings"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "for": "For organizations with advanced BI needs or multiple user teams.",
+        "price": 1799,
+        "price12": 1399,
+        "price6": 1600,
+        "badge": "PRIME",
+        "features": [
+          "40 development hours per month",
+          "Development and evolution of complex models",
+          "Advanced data integrations",
+          "BI tool migrations",
+          "Technical and strategic advice",
+          "Weekly follow-up meetings"
+        ]
+      }
+    ]
+  },
+  "Courses": {
+    "title": "Learn to self-manage the Power BI platform",
+    "description": "Sign up for an exclusive training for our clients and get the most out of the tools that Power BI and Be Data Global offer you.",
+    "classes": "8 classes of 2 hrs. over 1 month",
+    "enroll": "Sign up",
+    "download": "Download program",
+    "features": [
+      "Virtual",
+      "Hands-on",
+      "Personalized",
+      "Extra material"
+    ]
+  },
+  "Industries": {
+    "title": "These industries are already making the most of their data",
+    "items": [
+      "TEXTILE",
+      "ENERGY",
+      "MEDICINE",
+      "FISH FARMING",
+      "SOFTWARE"
+    ]
   },
   "Testimonial": {
-    "title": "What Users Say About AndresGilli",
-    "description": "See what developers and creators think about our landing page template.",
-    "quoteOne": "Landing page for a network marketing business.",
-    "authorOne": "go.soyevesai.com.ar",
-    "titleOne": "Entrepreneur",
-    "quoteTwo": "Landing page for a Data Analytics company.",
-    "authorTwo": "data.analitics.com.ar",
-    "titleTwo": "Data analytics and training venture",
-    "quoteThree": "Best landing page template I've used. SEO optimization really helped our site ranking.",
-    "authorThree": "James Wilson",
-    "titleThree": "Startup Founder",
-    "quoteFour": "The responsive design works perfectly across all devices. Very impressed with the attention to detail.",
-    "authorFour": "Sophie Martin",
-    "titleFour": "UI Designer",
-    "quoteFive": "Customization is super easy. We adapted it to our brand in no time.",
-    "authorFive": "David Kim",
-    "titleFive": "Marketing Director",
-    "quoteSix": "The mobile-first approach and performance optimizations are exactly what we needed.",
-    "authorSix": "Emma Thompson",
-    "titleSix": "Web Developer"
+    "items": [
+      {
+        "quote": "We had the pleasure of working with the Bedata team, specifically Gabriel Gilli, who built and advised us on a dashboard using Power BI; the experience exceeded our expectations. From the start they showed deep knowledge of the tool and an excellent ability to adapt to the different requirements of our salmon processing plants.",
+        "author": "Rodrigo Javier Ojeda Cordova",
+        "role": "Management and Cost Manager, Chamiza Plant",
+        "company": "Salmones Austral"
+      },
+      {
+        "quote": "We had the opportunity to work with Bedata and Gabriel Gilli's team, Power BI consultants who exceeded our expectations in every way. From the beginning they showed meticulous planning, making sure each step was carefully structured. Their approach was concrete, addressing our requirements clearly and effectively. What stood out most was their impressive technical skill: the consultant not only mastered every Power BI tool and function, but also adapted them to our specific needs, offering us customized, high-value solutions.",
+        "author": "Eng. Pablo Biscione",
+        "role": "Operations Manager",
+        "company": "Mercap"
+      },
+      {
+        "quote": "After going through several companies and tools, we found Bedata, Gabriel Gilli, the only ones who managed to understand our need and turn it into reality. We got a dashboard with all the information we need, quickly and professionally.",
+        "author": "Alejandro Khachadourian",
+        "role": "Partner – Commercial Manager",
+        "company": "Grupo Kalel – Filament Argentina"
+      }
+    ]
   },
-  "Faq": {
-    "title": "Common Questions",
-    "description": "Everything you need to know about AndresGilli landing page template",
-    "questionOne": "What technologies does AndresGilli use?",
-    "answerOne": "AndresGilli is built with Next.js, TypeScript, Tailwind CSS, and other modern tools. It uses best practices for performance and SEO.",
-    "questionTwo": "Is it easy to customize?",
-    "answerTwo": "Yes! The template is highly modular and well-documented. You can easily modify components, styles, and content to match your brand.",
-    "questionThree": "How does the internationalization work?",
-    "answerThree": "We use next-intl for internationalization, making it easy to add new languages. Just add your translations to the messages folder.",
-    "questionFour": "Can I use it for commercial projects?",
-    "answerFour": "Absolutely! AndresGilli is open-source and free to use for both personal and commercial projects.",
-    "questionFive": "Do I need coding experience?",
-    "answerFive": "Basic knowledge of React and Tailwind CSS is helpful, but our documentation makes it easy even for beginners."
-  },
-  "Cta": {
-    "title": "Start Building Your Landing Page Today",
-    "description": "Join thousands of developers who are using AndresGilli to create modern, responsive landing pages. Get started with our open-source template.",
-    "primaryAction": "Start Building",
-    "secondaryAction": "View on GitHub"
-  },
-  "Pricing": {
-    "title": "Pricing",
-    "description": "Customize the price for your project",
-    "monthly": "Minimum",
-    "yearly": "Intermediate",
-    "oneTime": "Complete",
-    "month": "month",
-    "popular": "Popular",
-    "upgrade": "Get Started",
-    "basicTitle": "Basic",
-    "proTitle": "Pro",
-    "basicBilling": "For personal or professional projects",
-    "proBilling": "Perfect for personal or professional projects",
-    "basicFeatureTitle": "Custom source code",
-    "proFeatureTitle": "Functional website",
-    "basic": {
-      "credits": "All main components customized",
-      "generation": "Home and pricing section",
-      "cover": "Testimonials section",
-      "scripts": "WhatsApp button",
-      "download": "Only in Spanish"
-    },
-    "pro": {
-      "credits": "All main components customized",
-      "basic": "Home, pricing, and testimonials sections",
-      "llm": "WhatsApp button",
-      "tts": "Only in Spanish",
-      "styles": "Advanced customization"
-    },
-    "periodYear": "year",
-    "periodOnce": "once",
-    "basicBillingYearly": "Designed for small or medium businesses",
-    "proBillingYearly": "Perfect for small or medium businesses",
-    "basicBillingOneTime": "A plan designed for those requiring greater support",
-    "proBillingOneTime": "Perfect for those requiring greater support and maintenance"
+  "AboutHome": {
+    "title": "We are Be Data",
+    "description": "A team of professionals passionate about data analysis that brings the world of Data Analytics closer to every company that chooses us, ensuring easy use and process improvements.",
+    "description2": "We have extensive experience in tailor-made reporting solutions for each industry.",
+    "action": "Learn about our way of working"
   },
   "Contact": {
-    "title": "Contact Us",
-    "description": "We are here to help. Send us a message and we will respond as soon as possible.",
-    "metaTitle": "Contact - AndresGilli",
-    "metaDescription": "Get in touch with us for any inquiries.",
+    "title": "We want to help you improve.",
+    "description": "Leave us your message to <b>schedule a meeting</b> or ask anything you need.",
+    "call": "Book a 30-minute call",
     "name": "Name",
-    "phone": "Phone",
     "email": "Email",
+    "company": "Company",
+    "phone": "Mobile",
     "message": "Message",
-    "submit": "Send Message",
+    "submit": "Send",
     "sending": "Sending...",
     "successMessage": "Message sent successfully!",
     "errorMessage": "There was an error sending the message. Please try again."
   },
-  "Hero": {
-    "title": "Make Landing Page Faster",
-    "description": "This is a free, open-source and powerful landing page template for saas project, it will help you to make your startup faster.",
-    "action": "Get Started"
+  "ServicesPage": {
+    "metaTitle": "Services - Be Data",
+    "metaDescription": "Data Analytics and Reporting, optimization and reengineering, BI outsourcing and personalized support with Power BI.",
+    "title": "Solutions tailored to your company",
+    "intro1": "Our approach is comprehensive, centered on the user of our platform and the company they represent.",
+    "intro2": "That's why each of our services is aimed at personalized solutions adaptable to each company according to its industry, its own identity and the state of its data.",
+    "powerTitle": "Accelerate Innovation",
+    "powerDesc": "Take advantage of the Microsoft Power Platform suite",
+    "blocks": [
+      {
+        "title": "Data Analytics and Reporting",
+        "intro": "We turn complex data into clear, actionable information, driving more strategic decisions and boosting your performance.",
+        "provides": "To do so, Be Data provides:",
+        "highlight": "Custom analysis",
+        "highlightDesc": "We build simple and complex, scalable and automated data models that surface useful information to track your main business indicators. Models are built from SQL databases, spreadsheet files such as Excel or Sheets, or web APIs.",
+        "bullets": [
+          "Interactive dashboards",
+          "Automated reports",
+          "Tool integration",
+          "Strategic consulting and advice"
+        ]
+      },
+      {
+        "title": "Optimization and Reengineering",
+        "intro": "Thanks to our experience and a systematic, analytical approach, we help organizations redesign their processes, eliminate inefficiencies and maximize the use of resources.",
+        "provides": "Be Data guarantees:",
+        "highlight": "Comprehensive diagnosis",
+        "highlightDesc": "Through a detailed analysis of existing processes we identify bottlenecks, redundancies and areas for improvement in information integration. We use techniques such as process mapping and workflow analysis to get a clear view of the current state.",
+        "bullets": [
+          "Process redesign",
+          "Best practices implementation",
+          "Training and ongoing support"
+        ]
+      },
+      {
+        "title": "Business Intelligence Outsourcing (OBI)",
+        "intro": "Our outsourcing service lets you externalize key tasks of your business, delegating processes to a team of experts so you can focus on your core activities. OBI focuses on specialized areas such as data analysis, IT and more, guaranteeing:",
+        "provides": "",
+        "highlight": "Smooth collaboration and communication",
+        "highlightDesc": "Through our Outsourcing team your requests and concerns will be handled quickly, working as if they were part of your company. We adapt our communication to yours. For good collaboration, our team works alongside yours.",
+        "bullets": [
+          "Resource optimization and reduced operating costs."
+        ]
+      },
+      {
+        "title": "Maintenance and Personalized Support",
+        "intro": "Technical assistance and advice complementing every Be Data solution. But not only that.",
+        "provides": "",
+        "highlight": "Free training",
+        "highlightDesc": "For users of the platforms we develop, so they can get the best performance from our products.",
+        "bullets": [
+          "Courses from scratch"
+        ]
+      }
+    ],
+    "ctaTitle": "Start improving your company's results by using the power of your data.",
+    "ctaAction": "Leave us a message"
+  },
+  "AboutPage": {
+    "metaTitle": "About us - Be Data",
+    "metaDescription": "A young professional team that believes in the potential of data to transform the world.",
+    "title": "About us",
+    "p1": "A young professional team that believes in the potential of data to transform the world. We created Be Data after many years working at other companies, to offer what the market needed: a service tailored to the client, that stays by their side and constantly improves.",
+    "p2": "Our goal is to help companies exploit their data to obtain valuable information and support their growth.",
+    "team": [
+      {
+        "name": "Gabriel Gilli",
+        "role": "Microsoft Certified Power BI Data Analyst Associate.",
+        "bio": "Specialist in developing complex models with Power BI, connecting to multiple sources and professional design. SQL Server and MySQL. Project and team leadership."
+      },
+      {
+        "name": "Ale Maldonado",
+        "role": "Senior Data Analyst.",
+        "bio": "Specialist in data analysis and project development with Microsoft Power BI and SQL. DAX and M. Complex models. Performance and optimization. Our BI consultant and Storytelling specialist at Be Data."
+      },
+      {
+        "name": "Jimena Salvatore",
+        "role": "Accounting Administrative Specialist.",
+        "bio": "Expert in bank reconciliation, control and follow-up of current accounts, monthly invoicing. Records entries in the accounting system and prepares monthly reports in Excel or Power BI. (Tango, Bejerman, Bica Ágil, Regente systems)."
+      }
+    ],
+    "methodTitle": "Our work methodology lets us achieve it.",
+    "steps": [
+      {
+        "title": "Client",
+        "desc": "Definition of data sources. Appointment of the business Product Owner. Granting of credentials. Setting priorities and describing information needs."
+      },
+      {
+        "title": "Factory",
+        "desc": "Development planning. Source connection, modeling, normalization and transformation of data. Dashboard development and publishing to PBI Service. Gateway setup and scheduled refresh."
+      },
+      {
+        "title": "Presentation",
+        "desc": "Periodic meetings to follow up on the project and present progress. Receiving feedback and re-works. Setting weekly goals."
+      }
+    ],
+    "differentTitle": "WE TURN SIMPLE DATA INTO VALUABLE INFORMATION",
+    "differentDesc": "What makes us different is what we deliver to our clients in each of our services:",
+    "values": [
+      {
+        "title": "User focus",
+        "desc": "Our clients are also the ones who will use the platforms we develop. That's why we program and design each platform according to their style and needs."
+      },
+      {
+        "title": "Functionality first",
+        "desc": "Every platform must be simple to use, fast in motion and analytical in its results."
+      },
+      {
+        "title": "Fluid communication",
+        "desc": "It is the basis we consider essential to build the future and how we want data to be conveyed."
+      },
+      {
+        "title": "Good practices",
+        "desc": "To improve analysis and good use of information we teach how to use each platform correctly and how to get the most from the results."
+      },
+      {
+        "title": "Unique corporate design",
+        "desc": "Identity matters. That's why we give a unique design to the platform your company will use."
+      }
+    ],
+    "cta": "Contact us"
+  },
+  "Footer": {
+    "tagline": "BI and Reporting solutions for companies that want to decide with data.",
+    "links": "Navigation",
+    "contactTitle": "Contact",
+    "copyright": "All rights reserved."
+  },
+  "Common": {
+    "whatsapp": "Chat on WhatsApp"
   }
 }

@@ -6,14 +6,8 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export function getLocaleUrl(locale: string, path?: string) {
-  if (locale === "en") {
-    locale = ""
-    if (path?.startsWith("/")) {
-      path = path.slice(1)
-    }
-  }
-  path ??= ""
-
-  return `${env.DOMAIN}/${locale}${path}`
+/** Absolute URL for a locale. The default locale (es) has no prefix. */
+export function getLocaleUrl(locale: string, path = "") {
+  const prefix = locale === "es" ? "" : `/${locale}`
+  return `${env.DOMAIN}${prefix}${path}`
 }

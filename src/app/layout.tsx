@@ -2,8 +2,8 @@ import "@/styles/globals.css";
 import { type Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "AndresGilli - Landing Page",
-  description: "Horizon Wing Landing Page",
+  title: "Be Data",
+  description: "Soluciones de BI y Reporting",
   icons: {
     icon: '/favicon.ico',
   },

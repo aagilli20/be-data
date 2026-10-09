@@ -4,16 +4,17 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { db } from '@/lib/firebase';
 import { collection, addDoc } from 'firebase/firestore';
-import { Button } from '@/components/ui/button';
+
+const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? 'aagilli20@gmail.com';
+
+const fieldClass =
+    'w-full border-0 border-b border-brand-blue/70 bg-transparent px-0 py-2 text-sm text-white placeholder:text-white/70 focus:border-brand-mint focus:outline-none focus:ring-0';
+
+const empty = { name: '', email: '', company: '', phone: '', message: '' };
 
 export default function ContactForm() {
     const t = useTranslations('Contact');
-    const [formData, setFormData] = useState({
-        name: '',
-        phone: '',
-        email: '',
-        message: ''
-    });
+    const [formData, setFormData] = useState(empty);
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -26,26 +27,27 @@ export default function ContactForm() {
                 createdAt: new Date()
             });
 
-            // Enviar correo de forma transparente sin que el usuario salga de la página
-            await fetch("https://formsubmit.co/ajax/aagilli20@gmail.com", {
-                method: "POST",
+            // Aviso por mail sin sacar al usuario de la página
+            await fetch(`https://formsubmit.co/ajax/${CONTACT_EMAIL}`, {
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
                 },
                 body: JSON.stringify({
                     Nombre: formData.name,
-                    Teléfono: formData.phone,
                     Email: formData.email,
+                    Empresa: formData.company,
+                    Celular: formData.phone,
                     Mensaje: formData.message,
-                    _subject: "¡Nueva consulta desde tu Web!"
+                    _subject: '¡Nueva consulta desde Be Data!'
                 })
             });
 
             setStatus('success');
-            setFormData({ name: '', phone: '', email: '', message: '' });
+            setFormData(empty);
         } catch (error) {
-            console.error('Error adding document: ', error);
+            console.error('Error sending contact form: ', error);
             setStatus('error');
         }
     };
@@ -56,77 +58,25 @@ export default function ContactForm() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="space-y-6 max-w-md mx-auto">
-            <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
-                    {t('name')}
-                </label>
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                />
+        <form onSubmit={handleSubmit} className="space-y-5">
+            <input className={fieldClass} type="text" name="name" required placeholder={t('name')} aria-label={t('name')} value={formData.name} onChange={handleChange} />
+            <input className={fieldClass} type="email" name="email" required placeholder={t('email')} aria-label={t('email')} value={formData.email} onChange={handleChange} />
+            <input className={fieldClass} type="text" name="company" placeholder={t('company')} aria-label={t('company')} value={formData.company} onChange={handleChange} />
+            <input className={fieldClass} type="tel" name="phone" placeholder={t('phone')} aria-label={t('phone')} value={formData.phone} onChange={handleChange} />
+            <textarea className={fieldClass} name="message" required rows={4} placeholder={t('message')} aria-label={t('message')} value={formData.message} onChange={handleChange} />
+
+            <div className="flex justify-end">
+                <button
+                    type="submit"
+                    disabled={status === 'loading'}
+                    className="rounded-full border border-white/80 px-8 py-2 text-sm font-medium text-white transition hover:bg-white hover:text-brand-deep disabled:opacity-50"
+                >
+                    {status === 'loading' ? t('sending') : t('submit')}
+                </button>
             </div>
 
-            <div>
-                <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                    {t('phone')}
-                </label>
-                <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    required
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                />
-            </div>
-
-            <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
-                    {t('email')}
-                </label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                />
-            </div>
-
-            <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
-                    {t('message')}
-                </label>
-                <textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows={4}
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                />
-            </div>
-
-            <Button type="submit" className="w-full" disabled={status === 'loading'}>
-                {status === 'loading' ? t('sending') : t('submit')}
-            </Button>
-
-            {status === 'success' && (
-                <p className="text-green-600 text-center text-sm">{t('successMessage')}</p>
-            )}
-            {status === 'error' && (
-                <p className="text-red-600 text-center text-sm">{t('errorMessage')}</p>
-            )}
+            {status === 'success' && <p className="text-center text-sm text-brand-mint">{t('successMessage')}</p>}
+            {status === 'error' && <p className="text-center text-sm text-red-300">{t('errorMessage')}</p>}
         </form>
     );
 }

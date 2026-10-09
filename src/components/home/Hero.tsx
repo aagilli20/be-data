@@ -1,36 +1,41 @@
-import { useTranslations } from 'next-intl';
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
+import HeroSlides from "./HeroSlides";
+import { rich } from "@/lib/rich";
 
 export default function Hero() {
-  const t = useTranslations('Hero');
+  const t = useTranslations("Hero");
+
+  const slides = [
+    <div key="main">
+      <h1 className="mb-4 text-2xl font-extrabold leading-tight text-white lg:text-3xl xl:text-4xl">{t("title")}</h1>
+      <p className="text-sm leading-relaxed text-white/85 lg:text-xs xl:text-sm">{t.rich("description", rich)}</p>
+    </div>,
+    <div key="kicker">
+      <h2 className="mb-4 text-2xl font-extrabold leading-tight text-white lg:text-3xl xl:text-4xl">{t("kicker")}</h2>
+      <p className="text-sm leading-relaxed text-white/85 lg:text-xs xl:text-sm">{t("kickerDesc")}</p>
+    </div>,
+  ];
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between py-24 px-8 max-w-7xl mx-auto gap-12">
-      <div className="flex-1 flex flex-col items-start text-left">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#1A1A1A]">
-          {t('title')}
-        </h1>
-        <p className="text-lg md:text-xl text-gray-600 max-w-[600px] mb-8 leading-relaxed">
-          {t('description')}
-        </p>
-        <Link href="#contacto">
-          <Button size="lg" className="min-w-[160px] bg-[#32373c] hover:bg-black text-white rounded-full">
-            {t('action')}
-          </Button>
-        </Link>
-      </div>
-      <div className="flex-1 flex justify-center md:justify-end">
-        <Image
-          src="/webbedata.webp"
-          alt="BeData Hero"
-          width={540}
-          height={456}
-          className="w-full max-w-[500px] h-auto object-contain"
-          priority
+    <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 lg:grid-cols-2 md:px-8 md:py-20">
+      <div className="rounded-[2rem] bg-brand-deep p-8 lg:flex lg:aspect-[739/457] lg:flex-col lg:justify-center lg:rounded-none lg:bg-transparent lg:bg-[url(/bedata/hero-bg.webp)] lg:bg-contain lg:bg-no-repeat lg:py-0 lg:pl-[8%] lg:pr-[24%]">
+        <HeroSlides
+          slides={slides}
+          action={
+            <Link
+              href="#contacto"
+              className="inline-flex h-10 w-fit items-center rounded-full bg-brand-blue px-6 text-sm font-semibold text-white transition hover:bg-brand-blue/90"
+            >
+              {t("action")}
+            </Link>
+          }
         />
       </div>
-    </div>
+      <div className="flex justify-center md:justify-end">
+        <Image src="/webbedata.webp" alt="Be Data dashboards" width={540} height={456} priority className="h-auto w-full max-w-[500px] object-contain" />
+      </div>
+    </section>
   );
-} 
+}

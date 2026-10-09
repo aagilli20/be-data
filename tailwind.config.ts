@@ -12,6 +12,13 @@ export default {
   			sans: ["var(--font-manrope)", ...fontFamily.sans]
   		},
   		colors: {
+  			brand: {
+  				blue: '#2274E0',
+  				navy: '#034872',
+  				deep: '#012741',
+  				mint: '#47DEB5',
+  				mist: '#F9FAFA'
+  			},
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
@@ -59,6 +66,10 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		keyframes: {
+  			marquee: {
+  				from: { transform: 'translateX(0)' },
+  				to: { transform: 'translateX(-50%)' }
+  			},
   			'accordion-down': {
   				from: {
   					height: '0'
@@ -77,6 +88,7 @@ export default {
   			}
   		},
   		animation: {
+  			marquee: 'marquee 35s linear infinite',
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
   		}

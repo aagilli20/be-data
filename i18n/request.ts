@@ -2,14 +2,8 @@ import { notFound } from 'next/navigation';
 import { getRequestConfig } from 'next-intl/server';
 import type { AbstractIntlMessages } from 'next-intl';
 
-export const localeItems = [
-    { code: 'en', name: 'English' },
-    { code: 'es', name: 'Español' },
-    { code: 'pt', name: 'Português' },
-];
-
-export const locales = localeItems.map((item) => item.code);
-export const defaultLocale = 'es';
+import { locales } from './config';
+export { localeItems, locales, defaultLocale } from './config';
 
 export default getRequestConfig(async ({ requestLocale }) => {
     // Validate that the incoming `locale` parameter is valid
